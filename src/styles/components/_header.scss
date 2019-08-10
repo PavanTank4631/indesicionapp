@@ -1,0 +1,29 @@
+.header{
+    background-color: $primary;
+    margin-bottom: $m;
+    padding: $m 0;
+
+    h1{
+        color: black;
+        font-size: $xl;
+    }
+    h2{
+        color: white;
+        font-size: $l;
+    }
+}
+
+.header_title{
+    font-size: $l;
+    margin: 0;
+}   
+.header_subtitle{
+    font-size: $m;
+    margin: 0;
+}
+
+@media (min-width: $desktop-break-point) {
+    .header{
+        margin-bottom: $l;
+    }
+}

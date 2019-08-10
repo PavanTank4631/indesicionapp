@@ -1,0 +1,33 @@
+.add-option_error{
+    font-style: italic;
+    color: red;
+    margin:$s;
+    margin-bottom: 0;
+    font-size: $l;
+}
+
+.add-option_form{
+    display: flex;
+    flex-direction: column;
+    padding: $m;
+}
+
+.add-option_input{
+    background:darken($color: $secondary, $amount: 15%);
+    border: none;
+    border-bottom: 3px solid darken($color: $secondary, $amount: 20%);
+    font-size: $l;
+    flex-grow: 1;
+    margin:0 0 $s 0;
+}
+
+@media (min-width: $desktop-break-point) {
+    .add-option_form{
+        flex-direction: row;
+    }
+
+    .add-option_input{
+        margin: 0 $s 0 0;
+    }
+}
+
